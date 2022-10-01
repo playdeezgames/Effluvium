@@ -3,6 +3,7 @@ Namespace Effluvium.UI.Tests
         <Fact>
         Sub GiveAWelcomeMessageAndProceedToTheMainMenu()
             Dim ui As New Mock(Of IUI)
+            ui.Setup(Function(x) x.Prompt(It.IsAny(Of String), It.IsAny(Of String()))).Returns("Quit")
             TitleProcessor.Run(ui.Object)
             ui.Verify(Sub(x) x.Clear())
             ui.Verify(Sub(x) x.WriteLine(It.IsAny(Of String)))
