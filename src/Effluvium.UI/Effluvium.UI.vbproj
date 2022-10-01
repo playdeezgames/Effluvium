@@ -1,9 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Effluvium</RootNamespace>
-    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Effluvium.UI</RootNamespace>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <OptionStrict>On</OptionStrict>
   </PropertyGroup>
 
@@ -18,18 +17,5 @@
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
     <WarningLevel>0</WarningLevel>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Effluvium.UI\Effluvium.UI.vbproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Import Include="Effluvium.UI" />
-    <Import Include="Spectre.Console" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Spectre.Console" Version="0.45.0" />
-  </ItemGroup>
 
 </Project>

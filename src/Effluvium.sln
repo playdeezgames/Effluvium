@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Effluvium", "Effluvium\Effluvium.vbproj", "{ACF64B5D-D2FE-459F-815F-442CAF2A9203}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Effluvium", "Effluvium\Effluvium.vbproj", "{ACF64B5D-D2FE-459F-815F-442CAF2A9203}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Effluvium.UI", "Effluvium.UI\Effluvium.UI.vbproj", "{4BEFB0AC-1603-4F67-972D-AAB14599156B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Effluvium.UI.Tests", "Effluvium.UI.Tests\Effluvium.UI.Tests.vbproj", "{C9827E98-4E22-4FC1-8FAA-9642D354FF41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{ACF64B5D-D2FE-459F-815F-442CAF2A9203}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACF64B5D-D2FE-459F-815F-442CAF2A9203}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACF64B5D-D2FE-459F-815F-442CAF2A9203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BEFB0AC-1603-4F67-972D-AAB14599156B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEFB0AC-1603-4F67-972D-AAB14599156B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEFB0AC-1603-4F67-972D-AAB14599156B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEFB0AC-1603-4F67-972D-AAB14599156B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9827E98-4E22-4FC1-8FAA-9642D354FF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9827E98-4E22-4FC1-8FAA-9642D354FF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9827E98-4E22-4FC1-8FAA-9642D354FF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9827E98-4E22-4FC1-8FAA-9642D354FF41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
