@@ -9,6 +9,12 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Effluvium.UI", "Effluvium.U
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Effluvium.UI.Tests", "Effluvium.UI.Tests\Effluvium.UI.Tests.vbproj", "{C9827E98-4E22-4FC1-8FAA-9642D354FF41}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{3B4186EC-5D61-4129-8EEC-7AF6981A3389}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+		..\shippit.sh = ..\shippit.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
