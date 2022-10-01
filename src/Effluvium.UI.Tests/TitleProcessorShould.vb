@@ -1,7 +1,7 @@
 Namespace Effluvium.UI.Tests
     Public Class TitleProcessorShould
         <Fact>
-        Sub GiveAWelcomeMessage()
+        Sub GiveAWelcomeMessageAndProceedToTheMainMenu()
             Dim ui As New Mock(Of IUI)
             TitleProcessor.Run(ui.Object)
             ui.Verify(Sub(x) x.Clear())

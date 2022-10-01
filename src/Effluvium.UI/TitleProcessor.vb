@@ -3,5 +3,6 @@ Public Module TitleProcessor
         ui.Clear()
         ui.WriteLine("Welcome to Effluvium!")
         ui.Prompt("", "Ok")
+        MainMenuProcessor.Run(ui)
     End Sub
 End Module
