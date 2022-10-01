@@ -1,10 +1,5 @@
 ﻿Public Class ConfirmProcessorShould
-    Private Sub SetupPrompt(UI As Mock(Of IUI), ParamArray choices As String())
-        Dim promptResults As New Queue(Of String)(choices)
-        UI.Setup(
-            Function(x) x.Prompt(It.IsAny(Of String), It.IsAny(Of String()))).
-            Returns(Function(a, b) promptResults.Dequeue())
-    End Sub
+    Inherits BaseProcessorTest
     <Theory>
     <InlineData(Choices.YesChoice, True)>
     <InlineData(Choices.NoChoice, False)>
