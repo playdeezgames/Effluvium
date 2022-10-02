@@ -8,4 +8,9 @@
     Protected Sub VerifyPrompt(ui As Mock(Of IUI))
         ui.Verify(Function(x) x.Prompt(It.IsAny(Of String), It.IsAny(Of String())))
     End Sub
+    Protected Sub WithUI(stuffToDo As Action(Of Mock(Of IUI)))
+        Dim ui As New Mock(Of IUI)
+        stuffToDo(ui)
+        ui.VerifyNoOtherCalls()
+    End Sub
 End Class

@@ -3,13 +3,14 @@ Namespace Effluvium.UI.Tests
         Inherits BaseProcessorTest
         <Fact>
         Sub GiveAWelcomeMessageAndProceedToTheMainMenu()
-            Dim ui As New Mock(Of IUI)
-            SetupPrompt(ui, OkChoice, QuitChoice, YesChoice)
-            TitleProcessor.Run(ui.Object)
-            ui.Verify(Sub(x) x.Clear())
-            ui.Verify(Sub(x) x.WriteLine(It.IsAny(Of String)))
-            VerifyPrompt(ui)
-            ui.VerifyNoOtherCalls()
+            WithUI(
+                Sub(ui)
+                    SetupPrompt(ui, OkChoice, QuitChoice, YesChoice)
+                    TitleProcessor.Run(ui.Object)
+                    ui.Verify(Sub(x) x.Clear())
+                    ui.Verify(Sub(x) x.WriteLine(It.IsAny(Of String)))
+                    VerifyPrompt(ui)
+                End Sub)
         End Sub
     End Class
 End Namespace
