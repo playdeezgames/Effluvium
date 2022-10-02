@@ -9,4 +9,13 @@
                 VerifyPrompt(ui)
             End Sub)
     End Sub
+    <Fact>
+    Sub AllowStartingAGame()
+        WithUI(
+            Sub(ui)
+                SetupPrompt(ui, StartGameChoice, QuitChoice, YesChoice)
+                MainMenuProcessor.Run(ui.Object)
+                VerifyPrompt(ui)
+            End Sub)
+    End Sub
 End Class
