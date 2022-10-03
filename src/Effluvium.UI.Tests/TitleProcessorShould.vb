@@ -4,9 +4,9 @@ Namespace Effluvium.UI.Tests
         <Fact>
         Sub GiveAWelcomeMessageAndProceedToTheMainMenu()
             WithUI(
-                Sub(ui)
+                Sub(ui, world)
                     SetupPrompt(ui, OkChoice, QuitChoice, YesChoice)
-                    TitleProcessor.Run(ui.Object)
+                    TitleProcessor.Run(ui.Object, world.Object)
                     ui.Verify(Sub(x) x.Clear())
                     ui.Verify(Sub(x) x.WriteLine(It.IsAny(Of String)))
                     VerifyPrompt(ui)

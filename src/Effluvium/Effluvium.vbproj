@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Import Include="Effluvium.Game" />
     <Import Include="Effluvium.UI" />
     <Import Include="Spectre.Console" />
   </ItemGroup>

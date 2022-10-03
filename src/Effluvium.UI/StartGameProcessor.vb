@@ -1,4 +1,5 @@
 ﻿Public Module StartGameProcessor
-    Friend Sub Run(ui As IUI)
+    Public Sub Run(ui As IUI, world As IWorld)
+        world.Start()
     End Sub
 End Module

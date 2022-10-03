@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{3B4186EC
 		..\shippit.sh = ..\shippit.sh
 	EndProjectSection
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Effluvium.Game", "Effluvium.Game\Effluvium.Game.vbproj", "{BBC3110B-6482-4F33-BFD9-6B31E5FF3691}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Effluvium.Game.Tests", "Effluvium.Game.Tests\Effluvium.Game.Tests.vbproj", "{8F1FE74F-5BF4-4C5E-B9D7-A7BDA07CF773}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{C9827E98-4E22-4FC1-8FAA-9642D354FF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9827E98-4E22-4FC1-8FAA-9642D354FF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9827E98-4E22-4FC1-8FAA-9642D354FF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC3110B-6482-4F33-BFD9-6B31E5FF3691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC3110B-6482-4F33-BFD9-6B31E5FF3691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC3110B-6482-4F33-BFD9-6B31E5FF3691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC3110B-6482-4F33-BFD9-6B31E5FF3691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1FE74F-5BF4-4C5E-B9D7-A7BDA07CF773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1FE74F-5BF4-4C5E-B9D7-A7BDA07CF773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1FE74F-5BF4-4C5E-B9D7-A7BDA07CF773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1FE74F-5BF4-4C5E-B9D7-A7BDA07CF773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
