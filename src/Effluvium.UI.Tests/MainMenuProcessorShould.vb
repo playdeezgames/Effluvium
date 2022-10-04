@@ -16,7 +16,7 @@
                 SetupPrompt(ui, StartGameChoice, QuitChoice, YesChoice)
                 MainMenuProcessor.Run(ui.Object, world.Object)
                 VerifyPrompt(ui)
-                world.Verify(Sub(x) x.Start())
+                world.Verify(Sub(x) x.Scaffold())
             End Sub)
     End Sub
 End Class

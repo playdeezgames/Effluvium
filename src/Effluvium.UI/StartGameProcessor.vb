@@ -1,5 +1,5 @@
 ﻿Public Module StartGameProcessor
     Public Sub Run(ui As IUI, world As IWorld)
-        world.Start()
+        world.Scaffold()
     End Sub
 End Module

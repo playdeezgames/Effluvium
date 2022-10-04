@@ -1,3 +1,3 @@
 ﻿Public Interface IWorld
-    Sub Start()
+    Sub Scaffold()
 End Interface

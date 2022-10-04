@@ -5,7 +5,7 @@ Public Class World
     Sub New(worldData As IWorldData)
         Me.WorldData = worldData
     End Sub
-    Public Sub Start() Implements IWorld.Start
-        'TODO 
+    Public Sub Scaffold() Implements IWorld.Scaffold
+        WorldData.Scaffold()
     End Sub
 End Class
