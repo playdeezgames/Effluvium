@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>Effluvium.Game.Tests</RootNamespace>
+    <RootNamespace>Effluvium.Data.Tests</RootNamespace>
     <TargetFramework>net6.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
@@ -37,17 +37,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Import Include="Castle.DynamicProxy.Generators" />
-    <Import Include="Castle.DynamicProxy.Internal" />
-    <Import Include="DiffEngine" />
-    <Import Include="Effluvium.Data" />
-    <Import Include="Microsoft.Win32.SafeHandles" />
-    <Import Include="Moq" />
-    <Import Include="Xunit" />
+    <ProjectReference Include="..\Effluvium.Data\Effluvium.Data.vbproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Effluvium.Game\Effluvium.Game.vbproj" />
+    <Import Include="Microsoft.Win32.SafeHandles" />
+    <Import Include="Moq" />
+    <Import Include="Shouldly.ShouldlyExtensionMethods" />
+    <Import Include="SPLORR.Data" />
+    <Import Include="System.Xml.Xsl" />
+    <Import Include="Xunit" />
   </ItemGroup>
 
 </Project>

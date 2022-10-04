@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>Effluvium.Game</RootNamespace>
+    <RootNamespace>Effluvium.Data</RootNamespace>
     <TargetFramework>netstandard2.1</TargetFramework>
     <OptionStrict>On</OptionStrict>
   </PropertyGroup>
@@ -19,11 +19,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Effluvium.Data\Effluvium.Data.vbproj" />
+    <ProjectReference Include="..\SPLORR.Data\SPLORR.Data.vbproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Import Include="Effluvium.Data" />
+    <Import Include="SPLORR.Data" />
   </ItemGroup>
 
 </Project>
