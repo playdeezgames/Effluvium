@@ -1,3 +1,3 @@
 ﻿Public Interface IPlayerData
-    Sub Scaffold()
+    Inherits IBaseData
 End Interface

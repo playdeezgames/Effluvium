@@ -1,12 +1,14 @@
 ﻿Public Class LocationData
+    Inherits BaseData
     Implements ILocationData
-
-    Private store As IStore
-
     Public Sub New(store As IStore)
-        Me.store = store
+        MyBase.New(store)
     End Sub
-
-    Public Sub Scaffold() Implements ILocationData.Scaffold
+    Public Overrides Sub Scaffold()
+        Store.ExecuteNonQuery(
+            $"CREATE TABLE [{Tables.Locations}]
+            (
+                [{Columns.LocationIdColumn}] INTEGER PRIMARY KEY AUTOINCREMENT
+            );")
     End Sub
 End Class

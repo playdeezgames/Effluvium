@@ -1,3 +1,3 @@
 ﻿Public Interface ICharacterData
-    Sub Scaffold()
+    Inherits IBaseData
 End Interface

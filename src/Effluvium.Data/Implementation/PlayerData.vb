@@ -1,12 +1,14 @@
 ﻿Public Class PlayerData
+    Inherits BaseData
     Implements IPlayerData
-
-    Private store As IStore
-
     Public Sub New(store As IStore)
-        Me.store = store
+        MyBase.New(store)
     End Sub
-
-    Public Sub Scaffold() Implements IPlayerData.Scaffold
+    Public Overrides Sub Scaffold()
+        Store.ExecuteNonQuery(
+            $"CREATE TABLE [{Tables.Players}]
+            (
+                [{Columns.LocationIdColumn}] INTEGER PRIMARY KEY AUTOINCREMENT
+            );")
     End Sub
 End Class

@@ -1,12 +1,16 @@
 ﻿Public Class CharacterData
+    Inherits BaseData
     Implements ICharacterData
-
-    Private store As IStore
-
     Public Sub New(store As IStore)
-        Me.store = store
+        MyBase.New(store)
     End Sub
-
-    Public Sub Scaffold() Implements ICharacterData.Scaffold
+    Public Overrides Sub Scaffold()
+        Store.ExecuteNonQuery(
+            $"CREATE TABLE [{Tables.Characters}]
+            (
+                [{Columns.CharacterIdColumn}] INTEGER PRIMARY KEY AUTOINCREMENT,
+                [{Columns.LocationIdColumn}] INT NOT NULL,
+                FOREIGN KEY ([{Columns.LocationIdColumn}]) REFERENCES [{Tables.Locations}]([{Columns.LocationIdColumn}])
+            );")
     End Sub
 End Class

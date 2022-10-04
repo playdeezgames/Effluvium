@@ -1,3 +1,3 @@
 ﻿Public Interface ILocationData
-    Sub Scaffold()
+    Inherits IBaseData
 End Interface
